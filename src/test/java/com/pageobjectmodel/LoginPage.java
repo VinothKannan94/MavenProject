@@ -32,6 +32,7 @@ public class LoginPage extends BaseClass implements LoginPageInterfaceElements {
         try {
             text = element.getText();
         } catch (Exception e) {
+            System.out.println("Custom Error Message : " + e.getMessage());
             e.printStackTrace();
         }
         return text;
